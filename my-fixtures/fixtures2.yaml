@@ -1,0 +1,9 @@
+Dog:
+  anotherDog:
+    name: "another one"
+
+Cat:
+  cat_nested2:
+    name: "nested2"
+    info: "{ref{myInfo}}"
+    more: "{ref{more1}}"

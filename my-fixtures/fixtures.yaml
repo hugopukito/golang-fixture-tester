@@ -1,0 +1,35 @@
+Dog:
+  firstDog:
+    id: cac1f1f1-bed4-4793-acf0-a68e2622e319
+    name: "chien seul"
+    breed: "bulldog"
+    size: 3
+    created: 2006-01-02 15:04:05
+
+  dogs{1..5}:
+    name: "chien{current}"
+    breed: "akita"
+
+  randDog:
+    created: "{new{}}"
+
+Cat:
+  cat{1..10}:
+    name: "chat{current}"
+    color: "orange"
+  cat_random:
+    name: "random_tester"
+    color: "orange"
+    tailLength: "{random{1..100}}"
+  cat_nested:
+    name: "nested"
+    info: "{ref{myInfo}}"
+    more: "{ref{more1}}"
+
+Info:
+  myInfo:
+    text: "some text"
+
+More:
+  more1:
+    moreText: "more text"
