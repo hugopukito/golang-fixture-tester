@@ -14,7 +14,7 @@ Dog:
     created: "{new{}}"
 
 Cat:
-  cat{1..10}:
+  cat{1..200}:
     name: "chat{current}"
     color: "orange"
   cat_random:

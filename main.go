@@ -2,8 +2,9 @@ package main
 
 import (
 	fixture "github.com/hugopukito/golang-fixture"
+	"github.com/hugopukito/golang-fixture/database"
 )
 
 func main() {
-	fixture.RunFixtures("db-fixture-test", "my-fixtures")
+	fixture.RunFixtures("my-fixtures", database.DatabaseParams{})
 }
