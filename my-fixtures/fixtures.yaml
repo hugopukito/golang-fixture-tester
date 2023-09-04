@@ -33,3 +33,11 @@ Info:
 More:
   more1:
     moreText: "more text"
+
+User:
+  user1:
+    email: "test@fixture.com"
+    password: "{hash{password}}"
+  user2:
+    email: "test2@fixture.com"
+    password: "password"

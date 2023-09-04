@@ -32,3 +32,8 @@ type More struct {
 	ID       uuid.UUID
 	MoreText string
 }
+
+type User struct {
+	Email    string
+	Password string
+}
