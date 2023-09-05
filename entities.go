@@ -20,7 +20,7 @@ type Cat struct {
 	Color      string
 	TailLength int
 	Info       Info
-	More       More
+	Moree      More
 }
 
 type Info struct {
