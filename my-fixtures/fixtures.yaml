@@ -21,18 +21,22 @@ Cat:
   #   name: "random_tester"
   #   color: "{random{orange,red,blue}}"
   #   tailLength: "{random{1..100}}"
-  cat_nested:
-    name: "nested"
-    # info: "{ref{myInfo}}"
+  cat_nested1:
+    name: "nested1"
     moree: "{ref{more1}}"
-
-# Info:
-#   myInfo:
-#     text: "some text"
+  cat_nested2:
+    name: "nested2"
+    moree: "{ref{more1}}"
+  cat_nested3:
+    name: "nested3"
+    moree: "{ref{more1}}"
+  cat_nested{4..8}:
+    name: "nested3"
+    moree: "{ref{more1}}"
 
 More:
   more1:
-    moreText: "more text"
+    moreText: "{random{word{30}}}"
 
 # User:
 #   user1:
